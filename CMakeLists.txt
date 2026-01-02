@@ -1,6 +1,14 @@
 cmake_minimum_required(VERSION 4.1)
-project(scanf)
+project(scanf C)
 
-set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_C_STANDARD 11)
 
-add_executable(scanf main.cpp)
+add_executable(scanf
+        main.c
+        my_scanf.c
+)
+
+add_executable(scanf_test
+        test_my_scanf.c
+        my_scanf.c
+)
